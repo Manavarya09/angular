@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { color-scheme: dark; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-charcoal text-gray-100 antialiased font-sans; }
+}
+
+@layer components {
+  .btn-primary { @apply inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white bg-gradient-to-br from-neon-blue to-neon-purple shadow-[0_0_0_1px_rgba(255,255,255,0.06)] transition-colors duration-200 hover:from-[#7ab0fb] hover:to-[#b8a3fb] focus:outline-none focus:ring-2 focus:ring-white/20; }
+  .btn-secondary { @apply inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-gray-100 border border-white/15 bg-white/5 hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white/10; }
+  .glass-card { @apply rounded-xl border border-white/10 bg-white/5 p-5 hover:border-white/20 transition-colors shadow-subtle; }
+}

@@ -1,0 +1,224 @@
+<!-- Header -->
+<header class="fixed top-0 inset-x-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-charcoal/70 bg-charcoal/80 border-b border-white/10">
+  <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2">
+      <span class="inline-flex h-8 w-8 items-center justify-center rounded-md bg-gradient-to-br from-neon-blue to-neon-purple shadow-[0_0_0_1px_rgba(255,255,255,0.06)]"></span>
+      <span class="text-sm font-semibold tracking-wide text-white/90">NeuroCanvas</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+      <a href="#features" class="hover:text-white transition-colors">Features</a>
+      <a href="#showcase" class="hover:text-white transition-colors">Showcase</a>
+      <a href="#collab" class="hover:text-white transition-colors">Collaboration</a>
+    </nav>
+    <div class="hidden md:flex items-center gap-3">
+      <a href="#cta" class="btn-secondary">Watch Demo</a>
+      <a href="#cta" class="btn-primary">Get Started</a>
+    </div>
+    <button class="md:hidden inline-flex items-center justify-center h-9 w-9 rounded-md border border-white/10 text-gray-300 hover:text-white hover:border-white/20" aria-label="Open menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="relative isolate">
+  <!-- Subtle background -->
+  <div class="absolute inset-0 -z-10 bg-dot-grid"></div>
+  <div class="absolute inset-0 -z-20 bg-gradient-to-b from-charcoal via-charcoal to-[#0b0f14]"></div>
+
+  <!-- Hero -->
+  <section class="pt-28 md:pt-36 pb-12 md:pb-20">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="mx-auto max-w-3xl text-center">
+        <span class="inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-1 text-xs text-gray-300/90 bg-white/5">
+          <span class="inline-block h-1.5 w-1.5 rounded-full bg-neon-blue animate-pulse"></span>
+          AI + Real‑time Collaboration
+        </span>
+        <h1 class="mt-6 text-4xl md:text-6xl font-semibold tracking-tight leading-[1.1] text-white">
+          Think in 3D. Collaborate Beyond Limits.
+        </h1>
+        <p class="mt-5 text-lg md:text-xl text-gray-300">
+          Turn scattered thoughts into connected 3D maps, powered by AI and real‑time teamwork.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href="#cta" class="btn-primary w-full sm:w-auto">Get Started</a>
+          <a href="#cta" class="btn-secondary w-full sm:w-auto">Watch Demo</a>
+        </div>
+      </div>
+
+      <!-- Decorative hero canvas mock lines -->
+      <div class="mt-14 md:mt-20 relative">
+        <div class="mx-auto max-w-5xl">
+          <div class="mock-3d group">
+            <div class="mock-surface">
+              <!-- nodes -->
+              <div class="node" style="--x:18%; --y:22%"></div>
+              <div class="node" style="--x:70%; --y:18%"></div>
+              <div class="node" style="--x:28%; --y:64%"></div>
+              <div class="node" style="--x:62%; --y:70%"></div>
+              <div class="node node-lg" style="--x:45%; --y:44%"></div>
+              <!-- connections -->
+              <svg class="absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <g stroke="url(#g)" stroke-width="0.4" stroke-linecap="round" opacity=".8">
+                  <line x1="18" y1="22" x2="45" y2="44" />
+                  <line x1="70" y1="18" x2="45" y2="44" />
+                  <line x1="28" y1="64" x2="45" y2="44" />
+                  <line x1="62" y1="70" x2="45" y2="44" />
+                  <line x1="28" y1="64" x2="62" y2="70" />
+                </g>
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#60A5FA" />
+                    <stop offset="100%" stop-color="#A78BFA" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="absolute right-4 top-4 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] text-gray-300">Live Canvas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-16 md:py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold text-white">Built for clarity and flow</h2>
+        <p class="mt-3 text-gray-300">Glass‑like cards, practical details, and smooth interactions that help your team think faster.</p>
+      </div>
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="glass-card group">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5 text-neon-blue"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 3l7.5 4.5v9L12 21l-7.5-4.5v-9L12 3z"/></svg>
+          </div>
+          <h3 class="card-title">3D-first canvas</h3>
+          <p class="card-body">Map ideas in depth. Zoom, orbit, and layer concepts without losing context.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="glass-card group">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5 text-neon-purple"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="card-title">AI-assisted structure</h3>
+          <p class="card-body">Turn messy notes into connected nodes. Let AI cluster and label your thoughts.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="glass-card group">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5 text-neon-blue"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M17 20h5v-5M22 9V4h-5M7 4H2v5M2 15v5h5"/></svg>
+          </div>
+          <h3 class="card-title">Real-time multiplayer</h3>
+          <p class="card-body">Work together live. See cursors, comments, and edits as they happen.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="glass-card group">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5 text-neon-purple"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M8 11a4 4 0 118 0v2h1a3 3 0 010 6H7a3 3 0 010-6h1v-2z"/></svg>
+          </div>
+          <h3 class="card-title">Seamless integrations</h3>
+          <p class="card-body">Bring in docs, tasks, and links. Push outcomes to your tools in one click.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="glass-card group">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5 text-neon-blue"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 15l-3 3m0 0l-3-3m3 3V6a4 4 0 118 0v12m-2-3l-3 3m0 0l-3-3"/></svg>
+          </div>
+          <h3 class="card-title">Enterprise-grade security</h3>
+          <p class="card-body">SSO, roles, and audit trails. Your data stays protected and compliant.</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="glass-card group">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5 text-neon-purple"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M3 15a4 4 0 004 4h10a4 4 0 000-8 6 6 0 10-12 0 4 4 0 00-2 4z"/></svg>
+          </div>
+          <h3 class="card-title">Cloud sync</h3>
+          <p class="card-body">Pick up where you left off on any device. Offline-friendly by design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase -->
+  <section id="showcase" class="py-16 md:py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
+        <div class="lg:col-span-3 order-2 lg:order-1">
+          <div class="mock-angled">
+            <div class="mock-angled-inner">
+              <!-- layered nodes illustration -->
+              <div class="layer l1"></div>
+              <div class="layer l2"></div>
+              <div class="layer l3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-2 order-1 lg:order-2">
+          <p class="text-sm uppercase tracking-wider text-gray-400">Showcase</p>
+          <h3 class="mt-3 text-2xl md:text-3xl font-semibold text-white">Ideas that grow like neurons.</h3>
+          <p class="mt-3 text-gray-300">Design conversations in space. Group, branch, and connect to see patterns your docs can’t show.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaboration -->
+  <section id="collab" class="py-16 md:py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <!-- Illustration -->
+        <div class="relative">
+          <div class="collab-illustration">
+            <div class="avatar a1"><img alt="A" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72'%3E%3Crect width='100%25' height='100%25' rx='999' fill='%2334394a'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' fill='%23cbd5e1' font-family='Inter' font-size='28' font-weight='700'%3EA%3C/text%3E%3C/svg%3E"/></div>
+            <div class="avatar a2"><img alt="B" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72'%3E%3Crect width='100%25' height='100%25' rx='999' fill='%23293544'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' fill='%23cbd5e1' font-family='Inter' font-size='28' font-weight='700'%3EB%3C/text%3E%3C/svg%3E"/></div>
+            <div class="avatar a3"><img alt="C" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72'%3E%3Crect width='100%25' height='100%25' rx='999' fill='%2323343f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' fill='%23cbd5e1' font-family='Inter' font-size='28' font-weight='700'%3EC%3C/text%3E%3C/svg%3E"/></div>
+            <div class="pulse"></div>
+            <div class="node-mini n1"></div>
+            <div class="node-mini n2"></div>
+            <div class="node-mini n3"></div>
+          </div>
+        </div>
+        <!-- Copy -->
+        <div>
+          <h3 class="text-2xl md:text-3xl font-semibold text-white">Work like you’re in the same room.</h3>
+          <ul class="mt-4 space-y-3 text-gray-300">
+            <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-neon-blue"></span>Brainstorm together in real time. Drop in ideas. Vote on what matters.</li>
+            <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-neon-purple"></span>Share links to nodes. Keep context as you move between threads.</li>
+            <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-neon-blue"></span>Comment, mention, and resolve — your canvas is your source of truth.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="py-16 md:py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+        <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(60% 60% at 80% 0%, rgba(96,165,250,0.15), transparent 60%), radial-gradient(60% 60% at 20% 100%, rgba(167,139,250,0.15), transparent 60%);"></div>
+        <div class="relative p-8 md:p-12 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+          <div class="md:col-span-2">
+            <h3 class="text-2xl md:text-3xl font-semibold text-white">Start mapping your team’s next big idea</h3>
+            <p class="mt-2 text-gray-300">Simple pricing. Free to try. No credit card required.</p>
+          </div>
+          <div class="flex md:justify-end"><a href="#" class="btn-primary">Create your first canvas</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-white/10 py-10">
+  <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+    <div class="flex items-center gap-2">
+      <span class="inline-flex h-6 w-6 rounded-md bg-gradient-to-br from-neon-blue to-neon-purple"></span>
+      <span>© 2025 NeuroCanvas</span>
+    </div>
+    <div class="flex items-center gap-6">
+      <a href="#features" class="hover:text-gray-200">Features</a>
+      <a href="#showcase" class="hover:text-gray-200">Showcase</a>
+      <a href="#collab" class="hover:text-gray-200">Collaboration</a>
+    </div>
+  </div>
+</footer>

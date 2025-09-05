@@ -1,0 +1,46 @@
+/* Base helpers */
+:host { display:block; }
+
+.bg-dot-grid{background-image:radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1.5px);background-size:22px 22px;background-position:0 0;}
+
+/* Buttons and cards rely on @layer components utilities in global styles */
+
+/* Hero 3D mock */
+.mock-3d{perspective:1200px;}
+.mock-surface{position:relative;background:linear-gradient(180deg, rgba(33,39,52,.8), rgba(20,24,33,.8));border:1px solid rgba(255,255,255,.08);box-shadow:0 10px 30px rgba(0,0,0,.4), inset 0 0 0 1px rgba(255,255,255,.03);backdrop-filter:saturate(1.1) blur(2px);border-radius:18px;height:360px;transform:rotateX(8deg) rotateY(-8deg) rotateZ(0.5deg);transition:transform .6s ease, box-shadow .6s ease;}
+.mock-3d:hover .mock-surface{transform:rotateX(4deg) rotateY(-4deg) rotateZ(0.25deg);box-shadow:0 16px 44px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.04);} 
+.node{position:absolute;left:var(--x);top:var(--y);width:8px;height:8px;border-radius:999px;background:linear-gradient( to bottom right, #60A5FA, #A78BFA );box-shadow:0 0 0 4px rgba(96,165,250,.12), 0 0 0 8px rgba(167,139,250,.08);} 
+.node-lg{width:12px;height:12px;}
+
+/* Showcase angled mock */
+.mock-angled{transform:rotate(-2deg);}
+.mock-angled-inner{position:relative; height:420px;border-radius:18px;border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg, rgba(30,36,48,.8), rgba(16,20,29,.8));box-shadow:0 14px 48px rgba(0,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.03);overflow:hidden;}
+.layer{position:absolute;border-radius:14px;border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.02);backdrop-filter:blur(4px);}
+.layer.l1{inset:14% 26% 46% 8%;}
+.layer.l2{inset:36% 10% 22% 24%;}
+.layer.l3{inset:22% 22% 22% 22%;}
+
+/* Collaboration illustration */
+.collab-illustration{position:relative;height:340px;border-radius:16px;border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg, rgba(34,40,52,.8), rgba(18,22,31,.8));box-shadow:0 12px 40px rgba(0,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.03);overflow:hidden;}
+.collab-illustration .avatar{position:absolute; width:56px; height:56px; border-radius:999px; overflow:hidden; border:1px solid rgba(255,255,255,.12); box-shadow:0 6px 18px rgba(0,0,0,.35);} 
+.collab-illustration .a1{left:18%; top:24%;}
+.collab-illustration .a2{right:16%; top:30%;}
+.collab-illustration .a3{left:40%; bottom:16%;}
+.collab-illustration .pulse{position:absolute; left:50%; top:52%; width:10px; height:10px; margin:-5px 0 0 -5px; background:linear-gradient( to bottom right, #60A5FA, #A78BFA ); border-radius:999px; animation:pulse-dot 2.2s infinite ease-in-out;}
+@keyframes pulse-dot{0%{box-shadow:0 0 0 0 rgba(96,165,250,.35),0 0 0 0 rgba(167,139,250,.25);}70%{box-shadow:0 0 0 14px rgba(96,165,250,0),0 0 0 24px rgba(167,139,250,0);}100%{box-shadow:0 0 0 0 rgba(96,165,250,0),0 0 0 0 rgba(167,139,250,0);}}
+.node-mini{position:absolute;width:8px;height:8px;border-radius:999px;background:linear-gradient( to bottom right, #60A5FA, #A78BFA );}
+.node-mini.n1{left:28%; top:62%;}
+.node-mini.n2{right:22%; bottom:22%;}
+.node-mini.n3{left:58%; top:26%;}
+
+/* Typography helpers used in cards */
+.card-title{ @apply mt-3 text-base font-semibold text-white; }
+.card-body{ @apply mt-1 text-sm text-gray-300 leading-relaxed; }
+.icon{ @apply inline-flex h-9 w-9 items-center justify-center rounded-md bg-white/5 border border-white/10; }
+
+/* Responsive tweaks */
+@media (max-width:640px){
+  .mock-surface{height:300px;}
+  .mock-angled-inner{height:300px;}
+  .collab-illustration{height:300px;}
+}
